@@ -44,5 +44,5 @@ docker pull container-registry.oracle.com/database/free:23.2.0.0
 ```
 ### Run a container in an specific port and password
 ```powershell
- docker run -dit -p 1521:1521 --memory=4g -v C:\Users\rvradmin\Documents\Oracle:/opt/oracle/oradata -e ORACLE_PWD=Pssword1 --name oracle_db container-registry.oracle.com/database/express:latest
+ docker run -dit -p <hostport>:1521 --memory=4g -v <hostpath>:/opt/oracle/oradata -e ORACLE_PWD=<password> --name oracle_db container-registry.oracle.com/database/express:latest
 ```

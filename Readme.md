@@ -1,4 +1,4 @@
-"# Oracle Database on Container AND Application inserting demo data
+# Oracle Database on Container AND Application inserting demo data
 ## DOCKER WINDOWS SERVER INSTALATION
 
 ### Install Hyper-V Feature

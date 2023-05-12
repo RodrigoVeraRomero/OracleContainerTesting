@@ -34,7 +34,7 @@ Expand-Archive -DestinationPath . .\release.zip
 For enterprise edition you must have oracle account and login <tenancyId>/User
   
 ```powershell
-docker login <region-key>.ocir.io
+docker login container-registry.oracle.com
 docker pull container-registry.oracle.com/database/enterprise:19.3.0.0
 ```
 ### Download Oracle Oficial Express:21.3.0.0
@@ -44,5 +44,5 @@ docker pull container-registry.oracle.com/database/free:23.2.0.0
 ```
 ### Run a container in an specific port and password
 ```powershell
- docker run -dit -p <hostport>:1521 --memory=4g -v <hostpath>:/opt/oracle/oradata -e ORACLE_PWD=<password> --name oracle_db container-registry.oracle.com/database/express:latest
+ docker run -dit -p <host>:1521 -p <host>:5500 --memory=4g -v C:\Users\rvradmin\Documents\Oracle:/opt/oracle/oradata -e ORACLE_PWD=<password> --name oracle_db container-registry.oracle.com/database/express:latest
 ```
